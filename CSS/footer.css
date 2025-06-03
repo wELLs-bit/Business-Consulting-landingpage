@@ -1,0 +1,118 @@
+footer {
+    background-color: #1a202c;
+    color: white;
+    padding: 48px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .footer-logo {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .footer-text {
+    color: #a0aec0;
+    margin-bottom: 24px;
+  }
+  .footer-links,
+  .footer-services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-links li,
+  .footer-services li {
+    margin-bottom: 12px;
+  }
+  .footer-links a,
+  .footer-services a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover,
+  .footer-services a:hover {
+    color: white;
+  }
+  .footer-social a {
+    color: #a0aec0;
+    margin-right: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-social a:hover {
+    color: white;
+  }
+  .footer-subscribe {
+    margin-bottom: 24px;
+  }
+  .footer-subscribe input[type="email"] {
+    padding: 8px 12px;
+    border: none;
+    color: #2d3748;
+    border-radius: 4px 0 0 4px;
+    width: 70%;
+  }
+  .footer-subscribe button {
+    padding: 8px 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .footer-subscribe button:hover {
+    background-color: #1d4ed8;
+  }
+  .footer-payments i {
+    margin-right: 8px;
+    color: #a0aec0;
+  }
+  .footer-bottom {
+    border-top: 1px solid #2d3748;
+    margin-top: 32px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-bottom a {
+    color: #a0aec0;
+    margin-left: 16px;
+    text-decoration: none;
+  }
+  .footer-bottom a:hover {
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .footer-bottom {
+      flex-direction: row;
+    }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  @media (min-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

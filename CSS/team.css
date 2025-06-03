@@ -1,0 +1,140 @@
+.team-section {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #374151;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .team-card {
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .team-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(44, 123, 229, 0.9), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .team-card:hover .team-overlay {
+    opacity: 1;
+  }
+
+  .team-overlay p {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-body h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card-body p {
+    color: #2563eb;
+    font-weight: 500;
+  }
+
+  .view-more {
+    display: inline-flex;
+    align-items: center;
+    color: #2563eb;
+    font-weight: 500;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+
+  .view-more:hover {
+    text-decoration: underline;
+  }
+
+  .view-more i {
+    margin-left: 0.5rem;
+  } 
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
