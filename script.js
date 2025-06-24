@@ -112,3 +112,22 @@ document.querySelector('form').addEventListener('submit', function(event) {
 function closePopup() {
   document.getElementById('popup-message').style.display = 'none';
 }
+
+
+// Case Study Modal
+  function openModal() {
+    document.getElementById("caseModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("caseModal").style.display = "none";
+  }
+
+  // Optional: Close when clicking outside modal
+  window.onclick = function (event) {
+    const modal = document.getElementById("caseModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+

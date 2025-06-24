@@ -35,7 +35,7 @@
   }
   
   .service-card {
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     border-radius: 12px;
     padding: 32px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -46,6 +46,7 @@
   }
   
   .service-card:hover {
+    scale: 1.02;
     transform: translateY(-4px);
     /* transform: scale(1.03); */
     /* transform: translateY(-4px) scale(1.05); */
