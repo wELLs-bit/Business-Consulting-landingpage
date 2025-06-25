@@ -6,7 +6,7 @@
 
 .pricing-section {
   padding: 30px 20px;
-  max-width: 1000px;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -42,7 +42,7 @@
 .pricing-plans {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 30px;
 }
 
