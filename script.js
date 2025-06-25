@@ -81,6 +81,31 @@ dots.forEach((dot, i) => {
   dot.onclick = () => showSlide(i);
 });
 
+// Pricing Plans
+function togglePricing(type) {
+  var basic = document.getElementById("basic-price");
+  var premium = document.getElementById("premium-price");
+  var enterprise = document.getElementById("enterprise-price");
+
+  var monthlyBtn = document.getElementById("monthlyBtn");
+  var annualBtn = document.getElementById("annualBtn");
+
+  if (type === "monthly") {
+    basic.innerHTML = "$149/mo";
+    premium.innerHTML = "$299/mo";
+    enterprise.innerHTML = "$499/mo";
+    monthlyBtn.className = "active";
+    annualBtn.className = "";
+  } else {
+    basic.innerHTML = "$1,499/yr";
+    premium.innerHTML = "$2,999/yr";
+    enterprise.innerHTML = "$4,999/yr";
+    annualBtn.className = "active";
+    monthlyBtn.className = "";
+  }
+}
+
+
 // Clear Form Input
 
 // Override the form submit

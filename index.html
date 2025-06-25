@@ -589,6 +589,7 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
       <div class="container">
         <div class="text-center">
@@ -718,40 +719,76 @@
       </div>
     </section>
 
-    <!-- <section class="section" id="pricing">
-      <div class="container">
-        <div class="text-center mb-16">
-          <h2>Transparent Pricing Plans</h2>
-          <p>Choose the consulting package that best fits your business needs and objectives.</p>
-          <div class="toggle">
-            <span>Monthly</span>
-            <input type="checkbox" id="pricing-toggle">
-            <span>Annual <span style="color:#3182ce; font-size: 14px; font-weight: 500;">(Save 20%)</span></span>
-          </div>
+    <!-- Pricing Section -->
+    <section class="Plans-section" id="pricing">
+      <div class="pricing-section">
+        <div class="pricing-header">
+          <h2>Flexible Plans for Growing Businesses</h2>
+          <p>Choose the consulting package that fits your business scale</p>
         </div>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="header">
-              <h3>Startup Package</h3>
-              <div class="price">$1,500<span>/month</span></div>
-              <p>Perfect for small businesses and startups looking for strategic guidance.</p>
-            </div>
-            <div class="features">
-              <ul>
-                <li><span class="icon">✓</span>Initial business assessment</li>
-                <li><span class="icon">✓</span>Monthly strategy sessions</li>
-                <li><span class="icon">✓</span>Quarterly performance review</li>
-                <li><span class="icon">✓</span>Email support</li>
-                <li class="disabled"><span class="icon">✕</span>Dedicated consultant</li>
-                <li class="disabled"><span class="icon">✕</span>Implementation support</li>
-                <li class="disabled"><span class="icon">✕</span>24/7 priority support</li>
-              </ul>
-              <a href="#contact" class="get-started">Get Started</a>
-            </div>
+
+        <!-- Toggle Buttons -->
+        <div class="toggle-switch">
+          <button
+            id="monthlyBtn"
+            class="active"
+            onclick="togglePricing('monthly')"
+          >
+            Monthly
+          </button>
+          <button id="annualBtn" onclick="togglePricing('annual')">
+            Annual
+          </button>
+        </div>
+
+        <!-- Pricing Plans -->
+        <div class="pricing-plans">
+          <!-- Basic Plan -->
+          <div class="plan">
+            <h3>Basic</h3>
+            <div class="price" id="basic-price">$149/mo</div>
+            <ul>
+              <li>1 Strategy Session / month</li>
+              <li>Email Support</li>
+              <li>Access to Monthly Reports</li>
+              <li>1 User License</li>
+              <li>Business Templates</li>
+            </ul>
+            <button>Select Basic</button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="plan">
+            <h3>Premium</h3>
+            <div class="price" id="premium-price">$299/mo</div>
+            <ul>
+              <li>4 Strategy Sessions / month</li>
+              <li>Email + Phone Support</li>
+              <li>Team Collaboration Tools</li>
+              <li>Marketing & Sales Analysis</li>
+              <li>3 User Licenses</li>
+              <li>Advanced Performance Dashboard</li>
+            </ul>
+            <button>Select Premium</button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="plan">
+            <h3>Enterprise</h3>
+            <div class="price" id="enterprise-price">$499/mo</div>
+            <ul>
+              <li>Unlimited Strategy Sessions</li>
+              <li>Dedicated Consultant</li>
+              <li>Full Business Audit</li>
+              <li>24/7 Priority Support</li>
+              <li>Unlimited User Licenses</li>
+              <li>Custom Software Integration</li>
+            </ul>
+            <button>Select Enterprise</button>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
